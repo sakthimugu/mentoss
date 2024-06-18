@@ -1,0 +1,43 @@
+// select your header or whatever element you wish
+const header = document.querySelector(".is-sticky");
+
+const headroom = new Headroom(header);
+headroom.init();
+
+AOS.init({
+    once:true
+});
+
+var scroll = new SmoothScroll('[data-scroll]', {
+	speed: 500,
+	speedAsDuration: true
+});
+
+const lightbox = GLightbox({
+	selector:'*[data-glightbox]'
+  });
+
+
+function toggleDarkMode() {
+	var htmlTag = document.documentElement;
+	var lightIcon = document.getElementById('lightIcon');
+	var darkIcon = document.getElementById('darkIcon');
+
+	if (htmlTag.classList.contains('dark')) {
+		htmlTag.classList.remove('dark');
+		localStorage.setItem('darkMode', 'false');
+		lightIcon.style.display = 'inline';
+		darkIcon.style.display = 'none';
+	} else {
+		htmlTag.classList.add('dark');
+		localStorage.setItem('darkMode', 'true');
+		lightIcon.style.display = 'none';
+		darkIcon.style.display = 'inline';
+	}
+}
+
+// Set initial dark mode state on page load
+var initialDarkMode = localStorage.getItem('darkMode') === 'true';
+if (initialDarkMode) {
+	toggleDarkMode();
+}

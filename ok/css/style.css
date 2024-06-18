@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.menus{
+    margin-left: 22%;
+}
+
+.navbar-default{
+    background-color: transparent;
+    border: none;
+}
+.title{
+    padding-left:70px;
+    font-size: 22px;
+    margin-top: 20px;
+}
+.navbar-default .navbar-header .navbar-brand{
+    color:white;
+}
+.navbar-default .navbar-nav>li>a{
+    color:white;
+    margin-top: 20px;
+}
+.navbar-default .navbar-nav>li>a:hover{
+    color: white;
+}
+.btn-default{
+    margin-right: 80px;
+    margin-top: 30px;
+    background-color: transparent;
+    color:white;
+    border-radius: 30px;
+}
+.btn-default:hover{
+    color: white;
+    background-color: transparent;
+}
+.videos{
+    filter: brightness(50%);
+    position: relative;
+}
+.video-content{
+    color:white;
+    position: absolute;
+    top: 35%;
+    left: 12%;
+    width: 1200px;
+}
+.video-content > .video-head{
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 1.5;
+}
+.video-para{
+    font-size: 17px;
+    width: 1050px;
+    margin-top: 20px;
+    margin-left: 80px;
+    padding-right: 120px;
+    line-height: 1.5;
+}
+@media (max-width:768px){
+    .title{
+        padding-left: 25px;
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    .menus{
+        margin-left: 40px;
+        margin-top: 6px;
+        font-size: 13px;
+    }
+    .navbar-default .navbar-nav>li>a{
+        padding: 10px;
+    }
+    
+    .btn-default{
+        padding: 5px 10px;
+        margin-left: 35px;
+        font-size: 12px;
+    }
+    .video-content{
+        color:white;
+        position: absolute;
+        top: 40%;
+        left: 4%;
+        width: 700px;
+    }
+    .video-content > .video-head{
+        
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 1.5;
+    }
+    .video-para{
+        font-size: 12px;
+        width: 600px;
+    }
+   
+ 
+}
+@media (max-width:430px){
+    .videos{
+        margin-top: 50px;
+        width: 100%;
+    }
+    .navbar-default{
+        background-color: white;
+        color:black;
+    }
+    .navbar-default .navbar-header .navbar-brand{
+        padding-top: 5px;
+        color:black;
+    }
+    .navbar-default .navbar-toggle{
+        margin-top: 14px;
+        border:none;
+        font-size: 20px;
+    }
+    .navbar-default .navbar-toggle:hover {
+        background-color: transparent;
+    }
+    .navbar-default .navbar-nav>li>a{
+        background-color: white;
+        color:black;
+        padding: 2px;
+    }
+    .btn-default{
+        color: black;
+        padding: 5px 7px;
+        margin-top: 10px;
+        margin-left: 50px;
+        font-size: 12px;
+    }
+    .video-content{
+        color:white;
+        position: absolute;
+        top: 25%;
+        left: 0%;
+        width: 400px;
+
+    }
+    .video-content > .video-head{
+        width: 300px;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 1.5;
+        margin-left: 50px;
+    }
+    .video-para{
+        width: 300px;
+        height: 50px;
+        font-size: 10px;
+        padding: 0px;
+        padding-right: 35px;
+        margin-left: 70px;
+        margin-top: 10px;
+    }
+}
+@media (min-width:1025px) and (max-width:1440px){
+    .menus{
+        margin-left: 18%;
+    }
+}
