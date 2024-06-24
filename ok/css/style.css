@@ -160,8 +160,8 @@
         margin-top: 10px;
     }
 }
-@media (min-width:1025px) and (max-width:1440px){
-    .menus{
-        margin-left: 18%;
-    }
+@media (max-width:1200px)
+{
+        margin-left: 22%;
+        padding-right : 42px;
 }
